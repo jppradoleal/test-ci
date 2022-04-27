@@ -6,12 +6,12 @@ def test_add():
   assert calc.add(2, 2) == 2 + 2
 
 def test_add_nan():
-  with pytest.raises(TypeError):
-    calc.add(2, '2')
+  with pytest.raises(ValueError):
+    calc.add(2, 'b')
 
 def test_add_two_nan():
   with pytest.raises(ValueError):
-    calc.add('2', '2')
+    calc.add('a', 'b')
 
 def test_subtract():
   assert calc.subtract(2, 2) == 2 - 2
