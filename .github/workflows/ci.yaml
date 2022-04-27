@@ -15,14 +15,14 @@ jobs:
       - name: Checkout ✔
         uses: actions/checkout@v3
       
+      - name: Install poetry 🔧
+        run: pipx install poetry
+
       - name: Setup python env 🐍
         uses: actions/setup-python@v3
         with:
           python-version: '3.10'
           cache: 'poetry'
-
-      - name: Install poetry 🔧
-        run: pipx install poetry
 
       - name: Install dependencies 🛠
         run: poetry install
