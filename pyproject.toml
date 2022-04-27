@@ -5,7 +5,7 @@ description = ""
 authors = ["João Prado <joaopedro0128@hotmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.7"
 pytest = "^7.1.2"
 
 [tool.poetry.dev-dependencies]
