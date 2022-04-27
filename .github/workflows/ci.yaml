@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  ci:
+  run-tests:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout ✔
